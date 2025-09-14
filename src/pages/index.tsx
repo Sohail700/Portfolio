@@ -15,7 +15,6 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  Icon,
 } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 import { AiOutlineOpenAI } from "react-icons/ai";
@@ -164,6 +163,7 @@ const About = () => {
             justifyContent="center"
             width="100%"
           >
+            <SlCalender />
             Schedule a meet
           </Button>
         </CNLink>

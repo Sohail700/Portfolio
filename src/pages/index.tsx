@@ -121,7 +121,7 @@ const About = () => {
           <Button
             key={item.title}
             variant="outline"
-            px={6} // more width left-right
+            px={2} // more width left-right
             py={3} // more height
             m={0.5}
             bg="blue.600"
@@ -136,11 +136,11 @@ const About = () => {
               color="inherit"
               display="flex"
               alignItems="center"
-              gap={2}
+              gap={1}
               fontWeight="bold"
               _hover={{ textDecoration: "none" }}
             >
-              <item.Icon size={20} /> {/* bigger icon */}
+              <item.Icon size={9} /> {/* bigger icon */}
               {item.title} {/* show text label next to icon */}
             </CNLink>
           </Button>

@@ -159,7 +159,7 @@ const navitems: NavLink[] = [
   {
     label: "Home",
     icon: <IoHomeOutline />,
-    href: "#about",
+    href: "#",
   },
   {
     label: "Projects",

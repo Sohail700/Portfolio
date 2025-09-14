@@ -177,7 +177,7 @@ const navitems: NavLink[] = [
     href: "#contact",
   },
   {
-    label: "Resune",
+    label: "Résumé",
     icon: <IoDocumentTextOutline />,
     href: "/Resume.pdf",
   },

@@ -89,8 +89,15 @@ export default function Navbar() {
                   href={nav.href}
                   border={0}
                   p={2}
-                  borderRadius={"md"}
-                  _hover={{ bg: "brand.muted", textDecoration: "none" }}
+                  borderRadius="md"
+                  fontWeight={nav.special ? "bold" : "normal"}
+                  bg={nav.special ? "blue.600" : "transparent"} // bluish bg
+                  color={nav.special ? "white" : "inherit"} // white text
+                  _hover={
+                    nav.special
+                      ? { bg: "blue.700", textDecoration: "none" } // darker on hover
+                      : { bg: "brand.muted", textDecoration: "none" }
+                  }
                 >
                   {nav.icon}
                   {nav.label}
@@ -154,6 +161,7 @@ type NavLink = {
   label: string;
   icon: React.ReactNode;
   href: string;
+  special?: boolean;
 };
 const navitems: NavLink[] = [
   {
@@ -180,5 +188,6 @@ const navitems: NavLink[] = [
     label: "Résumé",
     icon: <IoDocumentTextOutline />,
     href: "/Resume.pdf",
+    special: true,
   },
 ];

@@ -120,13 +120,28 @@ const About = () => {
         {socials.map((item) => (
           <Button
             key={item.title}
-            variant={"outline"}
-            p={2}
-            borderRadius={"full"}
-            border={0}
+            variant="outline"
+            px={6} // more width left-right
+            py={3} // more height
+            m={0.5}
+            bg="blue.600"
+            color="white"
+            borderRadius="full" // fully rounded (pill)
+            borderWidth="1px"
+            borderColor="gray.subtel"
+            _hover={{ bg: "blue.700", textDecoration: "none" }}
           >
-            <CNLink href={item.href} color={"Brand"}>
-              <item.Icon />
+            <CNLink
+              href={item.href}
+              color="inherit"
+              display="flex"
+              alignItems="center"
+              gap={2}
+              fontWeight="bold"
+              _hover={{ textDecoration: "none" }}
+            >
+              <item.Icon size={20} /> {/* bigger icon */}
+              {item.title} {/* show text label next to icon */}
             </CNLink>
           </Button>
         ))}

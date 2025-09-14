@@ -5,11 +5,7 @@ export const siteConfig = {
     avatar: "/assets/avatar.png",
     location: "New Delhi, India",
     experience: "1 years",
-    about: `Results-driven Computer Science student skilled in JavaScript (React, Next.js), Python (FastAPI), Dart (Flutter), Java, C++,
-and SQL (PostgreSQL, Prisma). Experienced in building high-performance, scalable, and user-focused web & mobile
-applications. Proficient in API integration, database optimization, and modern development practices with Git/GitHub.
-Passionate about leveraging AI/ML and cutting-edge technologies to create innovative solutions and optimize system
-performance.`,
+    about: `software engineer from Delhi, India, passionate about building seamless web and Android experiences with a focus on intuitive UX and scalable backend systems.`,
     keywords: ["Software Engineer", "Full Stack Developer", "React", "Node.js"],
   },
   contact: {

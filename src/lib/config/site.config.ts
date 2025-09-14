@@ -2,7 +2,7 @@ export const siteConfig = {
   profile: {
     name: "Sohail Khan",
     title: "Software Engineer",
-    avatar: "/assets/avatar.png",
+    avatar: "/cat.jpg",
     location: "New Delhi, India",
     experience: "1 years",
     about: `software engineer from Delhi, India, passionate about building seamless web and Android experiences with a focus on intuitive UX and scalable backend systems.`,

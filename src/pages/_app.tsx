@@ -6,7 +6,7 @@ import BackgroundGrid from "@/components/ui/BackgroundGrid";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider>
-      <BackgroundGrid />
+      {/* <BackgroundGrid /> */}
       <Navbar />
       <Component {...pageProps} />
     </Provider>

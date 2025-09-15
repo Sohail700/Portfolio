@@ -27,10 +27,12 @@ export default function Navbar() {
     <MyContainer zIndex={1} position={"sticky"} mt={3} top={3}>
       <Box
         mb={10}
-        borderWidth="1px"
-        borderColor="gray.subtel"
-        borderRadius="md"
-        bg="bg"
+        borderWidth="0.7px"
+        // borderColor="gray.subtel"
+        borderRadius="3xl"
+        bg="rgba(255, 255, 255, 0)" // transparent white
+        backdropFilter="blur(10px)" // glass blur
+        boxShadow="0 4px 20px rgba(0, 0, 0, 0.1)" // subtle shadow
       >
         <Flex
           justifyContent={{
@@ -42,11 +44,11 @@ export default function Navbar() {
         >
           <HStack gap={4} px={{ base: 3, md: 0 }}>
             <Avatar
-            size={"sm"}
-            name={siteConfig.profile.name}
-            src={siteConfig.profile.avatar}
+              size={"sm"}
+              name={siteConfig.profile.name}
+              src={siteConfig.profile.avatar}
             />
-            <Button
+            {/* <Button
               variant={"ghost"}
               padding={2}
               _hover={{ bg: "brand.muted" }}
@@ -61,7 +63,7 @@ export default function Navbar() {
               >
                 {siteConfig.social.githubHandle}
               </Link>
-            </Button>
+            </Button> */}
           </HStack>
           <Button
             variant={"ghost"}

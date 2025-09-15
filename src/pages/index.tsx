@@ -50,29 +50,20 @@ export default function Home() {
       <title>{siteConfig.profile.name}</title>
       <meta name="description" content={siteConfig.profile.about} />
       <meta name="keywords" content={siteConfig.profile.keywords.join(",")} />
-      <Flex
-        gap={4}
-        flexDirection={{
-          base: "column",
-          lg: "row",
-        }}
-        margin={1}
+
+      {/* Centered vertical stack */}
+      <Stack
+        gap={10}
+        margin={4}
+        maxW="3xl"
+        mx="auto" // centers content horizontally
       >
-        <Box
-          width={{
-            base: "100%",
-            lg: "40%",
-          }}
-        >
-          <About />
-        </Box>
-        <Stack gap={10} flex={1}>
-          <Work />
-          <Projects />
-          <TechStack />
-          <Contact />
-        </Stack>
-      </Flex>
+        <About />
+        <Work />
+        <Projects />
+        <TechStack />
+        <Contact />
+      </Stack>
     </>
   );
 }
@@ -101,26 +92,28 @@ const About = () => {
   ];
   return (
     <Stack
+      m={2}
       p={6}
       gap={4}
       borderWidth="1px"
       borderColor="gray.subtel"
       borderRadius="md"
       height={"fit-content"}
-      position={{ md: "sticky" }}
-      top={{ md: 24 }}
     >
-      <Heading as={"h1"} fontSize={"xl"} color={"brand"}>
+      <Heading as={"h1"} fontSize={"5xl"} color={"brand"}>
         {siteConfig.profile.name}
       </Heading>
-      <Text fontSize={"sm"} color={"brand.secondary"}>
+      <Heading ml={2} mt={-3} as={"h3"} fontSize={"sm"} color={"brand"}>
+        {siteConfig.subProfile.text}
+      </Heading>
+      <Text fontSize={"l"} color={"brand.secondary"}>
         {siteConfig.profile.about}
       </Text>
       <Center>
         {socials.map((item) => (
           <Button
             key={item.title}
-            variant="outline"
+            // variant="outline"
             px={2} // more width left-right
             py={3} // more height
             m={0.5}
@@ -189,30 +182,30 @@ const About = () => {
 
 const TechStack = () => {
   const items = [
-    { name: "TypeScript", badge: <BiLogoTypescript /> },
-    { name: "JavaScript", badge: <IoLogoJavascript /> },
-    { name: "React", badge: <FaReact /> },
+    { name: "TypeScript", badge: <BiLogoTypescript color="#3178C6" /> },
+    { name: "JavaScript", badge: <IoLogoJavascript color="#F7DF1E" /> },
+    { name: "React", badge: <FaReact color="#61DAFB" /> },
     { name: "Next", badge: <RiNextjsFill /> },
-    { name: "Tailwind", badge: <BiLogoTailwindCss /> },
-    { name: "Redux", badge: <BiLogoRedux /> },
+    { name: "Tailwind", badge: <BiLogoTailwindCss color="#38BDF8" /> },
+    { name: "Redux", badge: <BiLogoRedux color="#764ABC" /> },
     { name: "Flask", badge: <BiLogoFlask /> },
-    { name: "HTML5", badge: <FaHtml5 /> },
-    { name: "CSS3", badge: <FaCss3 /> },
-    { name: "Node", badge: <FaNodeJs /> },
+    { name: "HTML5", badge: <FaHtml5 color="#E34F26" /> },
+    { name: "CSS3", badge: <FaCss3 color="#1572B6" /> },
+    { name: "Node", badge: <FaNodeJs color="#339933" /> },
     { name: "Express", badge: <SiExpress /> },
-    { name: "Python", badge: <FaPython /> },
-    { name: "MongoDB", badge: <BiLogoMongodb /> },
-    { name: "AWS", badge: <FaAws /> },
+    { name: "Python", badge: <FaPython color="#3776AB" /> },
+    { name: "MongoDB", badge: <BiLogoMongodb color="#47A248" /> },
+    { name: "AWS", badge: <FaAws color="#FF9900" /> },
     { name: "OpenAI", badge: <AiOutlineOpenAI /> },
-    { name: "Firebase", badge: <BiLogoFirebase /> },
-    { name: "Git", badge: <FaGitAlt /> },
-    { name: "Docker", badge: <FaDocker /> },
+    { name: "Firebase", badge: <BiLogoFirebase color="#FFCA28" /> },
+    { name: "Git", badge: <FaGitAlt color="#F05032" /> },
+    { name: "Docker", badge: <FaDocker color="#2496ED" /> },
     { name: "Prisma", badge: <SiPrisma /> },
-    { name: "MUI", badge: <SiMui /> },
+    { name: "MUI", badge: <SiMui color="#007FFF" /> },
   ];
 
   return (
-    <Stack gap={4} id="home">
+    <Stack m={2} gap={4} id="home">
       <Heading as={"h2"} fontSize={"xl"} color={"brand"}>
         Tech Stack
       </Heading>
@@ -238,7 +231,7 @@ const TechStack = () => {
 
 const Projects = () => {
   return (
-    <Stack gap={4} id="projects">
+    <Stack m={2} gap={4} id="projects">
       <Heading as={"h2"} fontSize={"2xl"} color={"brand"}>
         Projects
       </Heading>
@@ -293,7 +286,7 @@ const Projects = () => {
 
 const Work = () => {
   return (
-    <Stack gap={4} id="work">
+    <Stack m={2} gap={4} id="work">
       <Heading as={"h2"} fontSize={"2xl"} color={"brand"}>
         Work
       </Heading>
@@ -351,7 +344,7 @@ const Work = () => {
 
 const Contact = () => {
   return (
-    <Stack gap={6} marginBottom={10} id="contact">
+    <Stack m={2} gap={6} marginBottom={10} id="contact">
       <Heading as={"h2"} fontSize={{ base: "xl", md: "2xl" }} color={"brand"}>
         Contact
       </Heading>

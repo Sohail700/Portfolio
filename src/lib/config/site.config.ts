@@ -8,6 +8,9 @@ export const siteConfig = {
     about: `software engineer from Delhi, India, passionate about building seamless web and Android experiences with a focus on intuitive UX and scalable backend systems.`,
     keywords: ["Software Engineer", "Full Stack Developer", "React", "Node.js"],
   },
+  subProfile: {
+    text: "A full stack web and app developer",
+  },
   contact: {
     email: "Sohial.khan196in@gmail.com",
     phone: "+918172832818",

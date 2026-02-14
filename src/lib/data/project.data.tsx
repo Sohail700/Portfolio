@@ -6,20 +6,35 @@ export type Projects = {
 
 export const projectsData: Projects[] = [
   {
-    title: "Gulfin.ai",
+    title: "Message web platform",
     description: [
-      "Contributed to the development and optimization of an AI-powered investment intelligence platform at Gulfin.ai, improving product performance and scalability.",
-      "Resolved critical frontend and API integration issues, enhancing platform stability and reducing reported user bugs by 40%.",
-      "Developed reusable Next.js components and improved page load speed, resulting in a smoother user experience across web and mobile devices.",
+      "Developed a production-ready anonymous messaging platform enabling users to receive messages via shareable links with a strong focus on privacy and usability.",
+      "Designed and implemented a responsive UI using Next.js, TypeScript, and Tailwind CSS, ensuring fast load times and seamless cross-device experience",
     ],
-    href: "https://Gulfin.ai",
+    href: "https://github.com/Sohail700/Anoni-message",
   },
   {
-    title: "Company URL Checker",
+    title: "Video Backend App",
     description: [
-      "Verify whether a website’s URL matches a predefined list of companies",
-      "Implemented efficient URL matching algorithms to ensure quick and accurate identification, enhancing user experience and security.",
-      "Built the extension using JavaScript and browser-specific APIs, ensuring compatibility across major web browsers",
+      "Built secure and scalable backend APIs for authentication, profile management, and session handling using JWT-based authorization and cookies.",
+      "Implemented scalable image and video upload functionality using Multer and Cloudinary to manage avatars, cover photos, and media content.",
+    ],
+    href: "https://github.com/Sohail700/VideoGram",
+  },
+  {
+    title: "FavWord Mobile   App",
+    description: [
+      "FavWord is here to make the process easy and exciting! This Flutter app generates random word pairs, lets you save your favorites, and keeps a history of previously generated words.",
+      "Users can save their favorite word pairs and revisit them later. The app features a responsive design optimized.",
+    ],
+    href: "https://github.com/Sohail700/NamesIdea",
+  },
+  {
+    title: "Website Blocker Tool",
+    description: [
+      "Developed a browser extension to validate website URLs against a predefined company list using efficient
+"matching logic, enhancing browsing security. Built using JavaScript and browser-specific APIs with
+"cross-browser compatibility."
     ],
     href: "https://addons.mozilla.org/en-US/firefox/addon/check-company/",
   },

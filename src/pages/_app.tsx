@@ -2,8 +2,8 @@ import { Provider } from "@/components/ui/provider";
 import type { AppProps } from "next/app";
 import Navbar from "@/components/navbar";
 import { Inter, Poppins } from "next/font/google";
+import BackgroundGrid from "@/components/ui/BackgroundGrid";
 
-// Load fonts
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,14 +14,15 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider>
+      <BackgroundGrid />
+
       <div
         className={`${inter.variable} ${poppins.variable}`}
-        style={{
-          fontFamily: "var(--font-inter)", // default body font
-        }}
+        style={{ fontFamily: "var(--font-inter)" }}
       >
         <Navbar />
         <Component {...pageProps} />
+
         <style jsx global>{`
           h1,
           h2,
@@ -29,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
           h4,
           h5,
           h6 {
-            font-family: var(--font-poppins); // stylish headings
+            font-family: var(--font-poppins);
             letter-spacing: 0.5px;
           }
         `}</style>

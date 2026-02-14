@@ -32,9 +32,7 @@ export const projectsData: Projects[] = [
   {
     title: "Website Blocker Tool",
     description: [
-      "Developed a browser extension to validate website URLs against a predefined company list using efficient
-"matching logic, enhancing browsing security. Built using JavaScript and browser-specific APIs with
-"cross-browser compatibility."
+      "Developed a browser extension to validate website URLs against a predefined company list using efficient matching logic, enhancing browsing security. Built using JavaScript and browser-specific APIs with cross-browser compatibility."
     ],
     href: "https://addons.mozilla.org/en-US/firefox/addon/check-company/",
   },

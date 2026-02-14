@@ -9,13 +9,12 @@ export const worksData: Work[] = [
   {
     company: "Saral Tech",
     deliverable: [
-      "Resolved critical frontend issues and optimized Next.js build process, reducing production deployment costs by 20%.",
-      "Developed and integrated reusable React components with Tailwind CSS, improving user experience and reducing page load time by 30%.",
-      "Collaborated with backend engineers to refine API integration, enhancing data flow efficiency and reducing response latency.",
-      "Conducted debugging and implemented performance monitoring tools, resulting in 40% fewer user-reported bugs post-release.",
-    ],
-    fromDate: "08-2025",
-    toDate: "Present",
+      "Analyzed and resolved critical frontend issues in a production Next.js application, improving build reliability and deployment stability.",
+      "Worked closely with backend engineers to integrate and validate RESTful APIs, ensuring consistent data flow and improved application responsiveness.",
+      "Performed systematic debugging and implemented monitoring practices to enhance application stability and reduce post-release defects.",
+       ],
+    fromDate: "August 2025",
+    toDate: "January 2026",
   },
   {
     company: "The Spark Foundation",
@@ -23,7 +22,7 @@ export const worksData: Work[] = [
       "Developed a full-stack e-commerce platform with product listings, cart functionality, and payment integration.",
       "Integrated a payment gateway for seamless transactions.",
     ],
-    fromDate: "05-2023",
-    toDate: "07-2023",
+    fromDate: "May 2023",
+    toDate: "July 2023",
   },
 ];
